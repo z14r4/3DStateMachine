@@ -1,7 +1,4 @@
-An advanced and complete state machine first person controller asset, made in Godot 4.
-
-![Asset logo](https://raw.githubusercontent.com/Jeh3no/Godot-Advanced-State-Machine-First-Person-Controller/refs/heads/main/addons/JehenoAdvancedFirstPersonController/Arts/StoreImages/logo.png)
-
+An advanced and complete state machine 3D first person controller asset, made in Godot 4.
 
 # General
 
@@ -10,12 +7,6 @@ This asset provides a fully commented, finite state machine based first-person c
 A test map is included to demonstrate the controller's capabilities, featuring interactive structures such as slopes, spheres, jump pads (vertical and directional), gravity zones, conveyor zones, and slippery zones.
 
 The controller uses a finite state machine architecture where each state has its own script, making it straightforward to add, remove, or modify behaviors. All movement parameters, camera settings, and keybindings are exposed as export variables in the inspector for easy customization.
-
-
-# Compatibility
-
-- **Godot 4.4 - 4.7**: Fully supported.
-- **Godot 4.0 - 4.3**: Should work, but you will need to delete the `.uid` files.
 
 
 # Features
@@ -50,21 +41,10 @@ The controller uses a finite state machine architecture where each state has its
 - Debug properties HUD
 - Input action checker
 
-## Showcase videos
 
-- The video showcasing the latest update: https://www.youtube.com/watch?v=MHr0td5G64M
-- The video showcasing the previous major update: https://www.youtube.com/watch?v=4PkR2Z1oxG8
+# Input actions
 
-
-# Installation / Quickstart
-
-## Step 1: Add the asset to your project
-
-Download or clone this repository and copy the `addons/` folder into your Godot project's root directory.
-
-## Step 2(optional): Set up input actions
-
-The controller requires **12 input actions** to be defined in your project's Input Map. If they are not binded, the default keybindings will be used. Go to **Project > Project Settings > Input Map** and create each of the following actions, then bind them to your preferred keys/buttons.
+The controller requires **12 input actions** to be defined in your project's Input Map. If they are not bound, the default Godot keybindings will be used. Go to **Project > Project Settings > Input Map** and create each of the following actions, then bind them to your preferred keys/buttons.
 
 By default, the key actions are defined as "play_char_{action_name}_action". Do not change this name unless you have configured your own key bindings.
 
@@ -82,12 +62,6 @@ By default, the key actions are defined as "play_char_{action_name}_action". Do 
 | `play_char_fly` | Toggle fly mode | F |
 | `play_char_zoom` | Camera zoom | Z |
 | `play_char_mouse_mode` | Toggle mouse capture | Esc |
-
-## Step 3(optional): Set up collisions
-
-Collisions masks and layers are already set up in the scenes, but for more clarity you can name them in the "3D Physics" section of your Godot projet settings window, as following :
-- 1 : world
-- 2 : player_character
 
 
 # State machine overview
@@ -150,21 +124,16 @@ The test map includes four interactive zone types that can be reused in your own
 The camera can only see visual layer 1, and the player character model is under visual layer 2, to avoid clipping issues, especially when crouching
 
 
-# Issues and contributions
-
-- **Bug reports**: Open an issue in the [Issues](../../issues) section.
-- **Feature requests**: Post in the [Discussions](../../discussions) section.
-- **Pull requests**: Submit improvements in the [Pull Requests](../../pulls) section.
-
-
 # Credits
 
+- Jeh3no (GitHub) https://github.com/Jeh3no:  Creator Base controller: https://github.com/Jeh3no/Godot-Advanced-State-Machine-First-Person-Controller
 - Godot Theme Prototype Textures by PiCode: https://godotengine.org/asset-library/asset/2480
 - psychowolf960 (GitHub) - Typo fixes and the following movement modifier zones: vertical jump pad, conveyor area, slippery area, gravity area
 - 1000nettles (Github) - Readme file overhaul
 - henkehedstrom (Github) - Default keybindings addition
 
 
-# Donations
+# Compatibility
 
-If you like my assets, and want to support my work : https://ko-fi.com/jeheno
+- **Godot 4.4 - 4.7**: Fully supported.
+- **Godot 4.0 - 4.3**: Should work, but you will need to delete the `.uid` files.
